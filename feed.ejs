@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feed</title>
+  <link rel="stylesheet" href="/stylesheets/feed.css">
+</head>
+<body>
+
+  <div class="logo-container">
+    <a href="/">
+      <img src="https://plus.unsplash.com/premium_photo-1669075651900-9eed0773e4c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGludGVyZXN0JTIwbG9nbyUyMGZvciUyMHNpdGV8ZW58MHx8MHx8fDA%3D" alt="Pinterest Logo" class="logo">
+      <span class="logo-name">Pinterest</span>
+    </a>
+  </div>
+
+
+  <div class="profile-button-container">
+    <a href="/profile"><button>Profile</button></a>
+  </div>
+
+<div class="feed-container">
+  <!-- Search bar -->
+  <form action="/feed" method="get" class="search-bar">
+    <input type="text" name="search" placeholder="Search for posts..." value="<%= typeof search !== 'undefined' ? search : '' %>">
+    <button type="submit">Search</button>
+  </form>
+
+  <!-- Masonry grid layout for posts -->
+  <div class="grid">
+    <% posts.forEach(function(post){ %>
+      <div class="grid-item">
+        <img src="<%= post.urls.regular %>" alt="<%= post.alt_description %>">
+        <p><%= post.alt_description %></p>
+      </div>
+    <% }) %>
+  </div>
+</div>
+
+</body>
+</html>

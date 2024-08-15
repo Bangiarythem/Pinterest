@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+/* Container for the profile card */
+#algn {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Profile Card */
+#card {
+    width: 90%;
+    max-width: 800px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+#upper-bg {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, #ff6600, #ff9900);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    top: 100px;
+    transform: translateY(-50%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: translateY(-55%);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Lower Section of Profile Card */
+#lower-bg {
+    padding: 100px 20px 20px;
+    text-align: center;
+}
+
+.text .name {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.text .title {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+#btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+#btn button {
+    padding: 12px 20px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#btn button:hover {
+    background-color: #ff9900;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Upload Form Styling */
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.input-field, .input-file {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus, .input-file:focus {
+    border-color: #ff6600;
+    outline: none;
+}
+
+.upload-button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.upload-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Cards Section */
+.div1 {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #f0f2f5;
+}
+
+.cardss {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Post Cards */
+.card2 {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 250px;
+}
+
+.card2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.img1 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Card Body Styling */
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
